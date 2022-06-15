@@ -17,9 +17,18 @@ body {
     flex-direction: column;
 }
 
+ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+    font-size: 18px;
+}
+
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--dark-background);
     color: var(--text);
@@ -30,11 +39,31 @@ body {
     font-size: 24px;
 }
 
-ul {
-    list-style-type: none;
+.hero {
+    background-color: var(--dark-background);
+    color: var(--text);
     display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 16px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 16px;
+}
+
+.hero > h1 {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero > p {
     font-size: 18px;
+    color: var(--quote-selection);
+}
+
+.hero button {
+    background-color: var(--call-to-action);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 20px;
+    color: var(--text);
+    font-size: 18px;
+    border: 1px solid black;
 }
