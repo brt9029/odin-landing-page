@@ -132,3 +132,10 @@ ul {
     border-radius: 10px;
     padding: 5px 25px;
 }
+
+footer {
+    text-align: center;
+    background-color: var(--dark-background);
+    color: var(--text);
+    padding: 4vh 0;
+}
