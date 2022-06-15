@@ -3,7 +3,7 @@
     --text: #F9FAF8;
     --call-to-action: #3882F6;
     --information-header: #1F2937;
-    --quote-selection: #E5E7EB;
+    --quote-section: #E5E7EB;
 }
 
 * {
@@ -66,4 +66,48 @@ ul {
     color: var(--text);
     font-size: 18px;
     border: 1px solid black;
+}
+
+.info {
+    padding: 32px;
+}
+
+.info > h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--dark-background);
+    padding-bottom: 32px;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 64px;
+}
+
+.image > img {
+    width: 30vh;
+    height: 30vh;
+    border: 2px var(--call-to-action) solid;
+    border-radius: 5%;
+}
+
+.quote-section {
+    background-color: var(--quote-section);
+    color: var(--dark-background);
+    display: flex;
+    flex-direction: column;
+    padding: 15vh;
+}
+
+.quote-text {
+    font-size: 36px;
+}
+
+.quote-signature {
+    font-size: 24px;
+    font-weight: 800;
+    text-align: right;
 }
